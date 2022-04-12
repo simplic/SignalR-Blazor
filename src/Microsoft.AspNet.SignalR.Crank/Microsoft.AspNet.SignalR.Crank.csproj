@@ -5,7 +5,7 @@
     <OutputType>Exe</OutputType>
     <AssemblyName>crank</AssemblyName>
     <Description>Load testing tool for SignalR</Description>
-    <TargetFrameworks>net48</TargetFrameworks>
+    <TargetFrameworks>net45</TargetFrameworks>
   </PropertyGroup>
   <PropertyGroup Condition="'$(PerfRun)'=='True'">
     <DefineConstants>$(DefineConstants);PERFRUN</DefineConstants>
