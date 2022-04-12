@@ -7,7 +7,7 @@
     <DefineConstants>$(DefineConstants);SERVER</DefineConstants>
 
     <!-- For the loc stuff to work right now, this needs to do the outer build/inner build phases even though it's only one TFM, so leave this as the plural TargetFrameworks -->
-    <TargetFrameworks>net45</TargetFrameworks>
+    <TargetFrameworks>net48</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\Microsoft.AspNet.SignalR.Core\TaskAsyncHelper.cs">

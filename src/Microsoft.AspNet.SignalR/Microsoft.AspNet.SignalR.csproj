@@ -4,7 +4,7 @@
     <Title>Microsoft ASP.NET SignalR</Title>
     <Description>Incredibly simple real-time web for .NET. This package pulls in the server components and JavaScript client required to use SignalR in an ASP.NET application.</Description>
     <PackageTags>Microsoft AspNet SignalR AspNetSignalR websockets real-time realtime comet HTTP streaming</PackageTags>
-    <TargetFrameworks>net45</TargetFrameworks>
+    <TargetFrameworks>net48</TargetFrameworks>
 
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <DefineConstants>$(DefineConstants);CLIENT</DefineConstants>

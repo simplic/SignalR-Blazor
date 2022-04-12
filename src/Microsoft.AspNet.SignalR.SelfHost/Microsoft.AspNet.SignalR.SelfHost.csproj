@@ -4,7 +4,7 @@
     <Title>Microsoft ASP.NET SignalR Self Host</Title>
     <Description>This package includes the required dependencies for self-hosting SignalR in a process outside of IIS using OWIN and HTTPListener.</Description>
     <PackageTags>Microsoft AspNet SignalR AspNetSignalR SelfHost</PackageTags>
-    <TargetFrameworks>net45</TargetFrameworks>
+    <TargetFrameworks>net48</TargetFrameworks>
 
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <DefineConstants>$(DefineConstants);CLIENT</DefineConstants>
