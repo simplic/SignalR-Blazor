@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Net;
-using System.Security.Cryptography.X509Certificates;
+//using System.Security.Cryptography.X509Certificates;
 using Microsoft.AspNet.SignalR.Infrastructure;
 
 namespace Microsoft.AspNet.SignalR.Client.Http
@@ -125,19 +125,19 @@ namespace Microsoft.AspNet.SignalR.Client.Http
             }
         }
 
-        public void AddClientCerts(X509CertificateCollection certificates)
-        {
-            if (certificates == null)
-            {
-                throw new ArgumentNullException("certificates");
-            }
-
-            // Mono hasn't implemented client certs
-            if (!MonoUtility.IsRunningMono)
-            {
-                _request.ClientCertificates = certificates;
-            }
-        }
+        //public void AddClientCerts(X509CertificateCollection certificates)
+        //{
+        //    if (certificates == null)
+        //    {
+        //        throw new ArgumentNullException("certificates");
+        //    }
+        //
+        //    // Mono hasn't implemented client certs
+        //    if (!MonoUtility.IsRunningMono)
+        //    {
+        //        _request.ClientCertificates = certificates;
+        //    }
+        //}
     }
 }
 

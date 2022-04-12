@@ -77,10 +77,6 @@
       <summary>Obtient ou définit le dernier identifiant de message pour la connexion.</summary>
       <returns>Le dernier id de message pour la connexion.</returns>
     </member>
-    <member name="P:Microsoft.AspNet.SignalR.Client.Connection.Microsoft#AspNet#SignalR#Client#IConnection#Certificates">
-      <summary>Obtient une collection qui stocke les objets X509Certificate.</summary>
-      <returns>Collection qui stocke les objets X509Certificate.</returns>
-    </member>
     <member name="M:Microsoft.AspNet.SignalR.Client.Connection.Microsoft#AspNet#SignalR#Client#IConnection#ChangeState(Microsoft.AspNet.SignalR.Client.ConnectionState,Microsoft.AspNet.SignalR.Client.ConnectionState)">
       <summary>Appelé(e) quand la connexion doit changer d'état.</summary>
       <returns>true si la connexion doit changer d'état ; sinon, false.</returns>
@@ -566,10 +562,6 @@
     </member>
     <member name="T:Microsoft.AspNet.SignalR.Client.IConnection">
       <summary>Aucun contenu ne sera mis à jour. N'ajoutez pas de matériel ici.</summary>
-    </member>
-    <member name="P:Microsoft.AspNet.SignalR.Client.IConnection.Certificates">
-      <summary>Obtient les certificats de X509CertificateCollection pour <see cref="T:Microsoft.AspNet.SignalR.Client.IConnection" />.</summary>
-      <returns>Certificats de X509CertificateCollection pour <see cref="T:Microsoft.AspNet.SignalR.Client.IConnection" />.</returns>
     </member>
     <member name="M:Microsoft.AspNet.SignalR.Client.IConnection.ChangeState(Microsoft.AspNet.SignalR.Client.ConnectionState,Microsoft.AspNet.SignalR.Client.ConnectionState)">
       <summary>Fonction appelée quand la <see cref="T:Microsoft.AspNet.SignalR.Client.IConnection" /> doit changer d'état.</summary>

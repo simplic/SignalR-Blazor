@@ -77,10 +77,6 @@
       <summary>取得或設定連線的最後一個訊息識別碼。</summary>
       <returns>連線的最後訊息識別碼。</returns>
     </member>
-    <member name="P:Microsoft.AspNet.SignalR.Client.Connection.Microsoft#AspNet#SignalR#Client#IConnection#Certificates">
-      <summary>取得儲存 X509Certificate 物件的集合。</summary>
-      <returns>儲存 X509Certificate 物件的集合。</returns>
-    </member>
     <member name="M:Microsoft.AspNet.SignalR.Client.Connection.Microsoft#AspNet#SignalR#Client#IConnection#ChangeState(Microsoft.AspNet.SignalR.Client.ConnectionState,Microsoft.AspNet.SignalR.Client.ConnectionState)">
       <summary>當連線變更狀態時呼叫。</summary>
       <returns>如果連線已變更狀態，則為 true，否則為 false。</returns>
@@ -557,11 +553,6 @@
     </member>
     <member name="T:Microsoft.AspNet.SignalR.Client.IConnection">
       <summary>不會更新此處的內容，請不要在此處新增教材。</summary>
-    </member>
-    <member name="P:Microsoft.AspNet.SignalR.Client.IConnection.Certificates">
-      <summary>取得 <see cref="T:Microsoft.AspNet.SignalR.Client.IConnection" /> 的 X509CertificateCollection 憑證。</summary>
-      <returns>
-        <see cref="T:Microsoft.AspNet.SignalR.Client.IConnection" /> 的 X509CertificateCollection 憑證。</returns>
     </member>
     <member name="M:Microsoft.AspNet.SignalR.Client.IConnection.ChangeState(Microsoft.AspNet.SignalR.Client.ConnectionState,Microsoft.AspNet.SignalR.Client.ConnectionState)">
       <summary>當 <see cref="T:Microsoft.AspNet.SignalR.Client.IConnection" /> 變更狀態時呼叫。</summary>

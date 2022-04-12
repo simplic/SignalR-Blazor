@@ -77,10 +77,6 @@
       <summary>Získá nebo nastaví pro připojení ID poslední zprávy.</summary>
       <returns>ID poslední zprávy pro připojení.</returns>
     </member>
-    <member name="P:Microsoft.AspNet.SignalR.Client.Connection.Microsoft#AspNet#SignalR#Client#IConnection#Certificates">
-      <summary>Získá kolekci pro ukládání objektů X509Certificate.</summary>
-      <returns>Kolekce pro ukládání objektů X509Certificate.</returns>
-    </member>
     <member name="M:Microsoft.AspNet.SignalR.Client.Connection.Microsoft#AspNet#SignalR#Client#IConnection#ChangeState(Microsoft.AspNet.SignalR.Client.ConnectionState,Microsoft.AspNet.SignalR.Client.ConnectionState)">
       <summary>Voláno, když se má změnit stav připojení.</summary>
       <returns>Hodnota true, pokud se má změnit stav připojení; jinak hodnota false.</returns>
@@ -541,10 +537,6 @@
     </member>
     <member name="T:Microsoft.AspNet.SignalR.Client.IConnection">
       <summary>Obsah zde nebude aktualizován. Žádné materiály sem prosím nepřidávejte.</summary>
-    </member>
-    <member name="P:Microsoft.AspNet.SignalR.Client.IConnection.Certificates">
-      <summary>Získá certifikáty položky X509CertificateCollection pro připojení <see cref="T:Microsoft.AspNet.SignalR.Client.IConnection" />.</summary>
-      <returns>Certifikáty položky X509CertificateCollection pro připojení <see cref="T:Microsoft.AspNet.SignalR.Client.IConnection" />.</returns>
     </member>
     <member name="M:Microsoft.AspNet.SignalR.Client.IConnection.ChangeState(Microsoft.AspNet.SignalR.Client.ConnectionState,Microsoft.AspNet.SignalR.Client.ConnectionState)">
       <summary>Voláno, když se má změnit stav připojení <see cref="T:Microsoft.AspNet.SignalR.Client.IConnection" />.</summary>

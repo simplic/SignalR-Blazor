@@ -5,7 +5,7 @@
 
 using System;
 #if !NETFX_CORE && !PORTABLE
-using System.Security.Cryptography.X509Certificates;
+// using System.Security.Cryptography.X509Certificates;
 #endif
 using System.Net.Http;
 
@@ -45,10 +45,10 @@ namespace Microsoft.AspNet.SignalR.Client.Http
                 Proxy = _connection.Proxy;
             }
 
-            foreach (X509Certificate cert in _connection.Certificates)
-            {
-                ClientCertificates.Add(cert);
-            }
+            // foreach (X509Certificate cert in _connection.Certificates)
+            // {
+            //     ClientCertificates.Add(cert);
+            // }
         }
     }
 }

@@ -121,10 +121,10 @@ namespace Microsoft.AspNet.SignalR.Client.Transports
         /// </summary>
         private void PrepareRequest()
         {
-            if (_connection.Certificates != null)
-            {
-                AddClientCerts(_connection.Certificates);
-            }
+            // if (_connection.Certificates != null)
+            // {
+            //     AddClientCerts(_connection.Certificates);
+            // }
 
             if (_connection.CookieContainer != null)
             {

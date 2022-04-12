@@ -77,10 +77,6 @@
       <summary>获取或设置连接的最后一个消息 ID。</summary>
       <returns>连接的最后一个消息 ID。</returns>
     </member>
-    <member name="P:Microsoft.AspNet.SignalR.Client.Connection.Microsoft#AspNet#SignalR#Client#IConnection#Certificates">
-      <summary>获取存储 X509Certificate 对象的集合。</summary>
-      <returns>存储 X509Certificate 对象的集合。</returns>
-    </member>
     <member name="M:Microsoft.AspNet.SignalR.Client.Connection.Microsoft#AspNet#SignalR#Client#IConnection#ChangeState(Microsoft.AspNet.SignalR.Client.ConnectionState,Microsoft.AspNet.SignalR.Client.ConnectionState)">
       <summary>当连接将要更改状态时调用。</summary>
       <returns>如果连接将要更改状态，则为 true；否则为 false。</returns>
@@ -557,11 +553,6 @@
     </member>
     <member name="T:Microsoft.AspNet.SignalR.Client.IConnection">
       <summary>此处的内容将不会更新；请不要在此处添加材料。</summary>
-    </member>
-    <member name="P:Microsoft.AspNet.SignalR.Client.IConnection.Certificates">
-      <summary>获取 <see cref="T:Microsoft.AspNet.SignalR.Client.IConnection" /> 的 X509CertificateCollection 的证书。</summary>
-      <returns>
-        <see cref="T:Microsoft.AspNet.SignalR.Client.IConnection" /> 的 X509CertificateCollection 的证书。</returns>
     </member>
     <member name="M:Microsoft.AspNet.SignalR.Client.IConnection.ChangeState(Microsoft.AspNet.SignalR.Client.ConnectionState,Microsoft.AspNet.SignalR.Client.ConnectionState)">
       <summary>当 <see cref="T:Microsoft.AspNet.SignalR.Client.IConnection" /> 将要更改状态时调用。</summary>

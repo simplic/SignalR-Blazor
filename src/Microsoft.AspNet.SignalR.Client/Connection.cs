@@ -10,7 +10,6 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Reflection;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -92,7 +91,7 @@ namespace Microsoft.AspNet.SignalR.Client
         //The json serializer for the connections
         private JsonSerializer _jsonSerializer = new JsonSerializer();
 
-        private readonly X509CertificateCollection _certCollection = new X509CertificateCollection();
+        // private readonly X509CertificateCollection _certCollection = new X509CertificateCollection();
 
         // The URL passed to the ctor. Used to reset _actualUrl during Disconnect().
         private readonly string _userUrl;
@@ -291,13 +290,13 @@ namespace Microsoft.AspNet.SignalR.Client
             }
         }
 
-        X509CertificateCollection IConnection.Certificates
-        {
-            get
-            {
-                return _certCollection;
-            }
-        }
+        // X509CertificateCollection IConnection.Certificates
+        // {
+        //     get
+        //     {
+        //         return _certCollection;
+        //     }
+        // }
 
         public TraceLevels TraceLevel { get; set; }
 
@@ -836,22 +835,22 @@ namespace Microsoft.AspNet.SignalR.Client
             return Send(this.JsonSerializeObject(value));
         }
 
-        /// <summary>
-        /// Adds a client certificate to the request
-        /// </summary>
-        /// <param name="certificate">Client Certificate</param>
-        public void AddClientCertificate(X509Certificate certificate)
-        {
-            lock (_stateLock)
-            {
-                if (State != ConnectionState.Disconnected)
-                {
-                    throw new InvalidOperationException(Resources.Error_CertsCanOnlyBeAddedWhenDisconnected);
-                }
-
-                _certCollection.Add(certificate);
-            }
-        }
+        // / <summary>
+        // / Adds a client certificate to the request
+        // / </summary>
+        // / <param name="certificate">Client Certificate</param>
+        // public void AddClientCertificate(X509Certificate certificate)
+        // {
+        //     lock (_stateLock)
+        //     {
+        //         if (State != ConnectionState.Disconnected)
+        //         {
+        //             throw new InvalidOperationException(Resources.Error_CertsCanOnlyBeAddedWhenDisconnected);
+        //         }
+        // 
+        //         _certCollection.Add(certificate);
+        //     }
+        // }
 
         public void Trace(TraceLevels level, string format, params object[] args)
         {

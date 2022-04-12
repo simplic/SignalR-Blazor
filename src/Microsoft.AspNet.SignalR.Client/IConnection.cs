@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Net;
-using System.Security.Cryptography.X509Certificates;
+//using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using Microsoft.AspNet.SignalR.Client.Http;
 using Microsoft.AspNet.SignalR.Client.Transports;
@@ -38,7 +38,7 @@ namespace Microsoft.AspNet.SignalR.Client
         /// </summary>
         IWebProxy Proxy { get; set; }
 
-        X509CertificateCollection Certificates { get; }
+        // X509CertificateCollection Certificates { get; }
 
         bool ChangeState(ConnectionState oldState, ConnectionState newState);
 
