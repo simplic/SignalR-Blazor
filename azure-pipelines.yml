@@ -1,0 +1,60 @@
+trigger:
+  branches:
+    include:
+      - main
+      - dev
+
+  paths:
+    include:
+      - src/*
+      - test/*
+      - setup/*
+      - dependencies/*
+      - azure-pipelines.yml
+
+pr:
+  branches:
+    include:
+      - "*"
+
+pool:
+  vmImage: "windows-latest"
+
+variables:
+- name: buildConfiguration
+  value: "Release"
+
+jobs:
+- job: SignalR_Blazor
+  timeoutInMinutes: 120
+  steps:
+    - checkout: self
+      submodules: true
+      persistCredentials: true
+
+    - task: NuGetToolInstaller@1
+      displayName: "Install nuget 5.x"
+      inputs:
+        versionSpec: "5.x"
+  
+    - task: NuGetCommand@2
+      inputs:
+        command: "restore"
+        restoreSolution: "**/*.sln"
+        feedsToUse: "select"
+        vstsFeed: "f7087ef5-bf6f-48b2-8b8b-5e513f4a7a9e"
+  
+    - task: CmdLine@2
+      displayName: "build"
+      inputs:
+        script: |
+          build.cmd
+
+  - task: NuGetCommand@2
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+    inputs:
+      command: "push"
+      packagesToPush: "$(Build.ArtifactStagingDirectory)/Microsoft.AspNet.SignalR.*.nupkg;!$(Build.ArtifactStagingDirectory)/Microsoft.AspNet.SignalR.*.symbols.nupkg;"
+      nuGetFeedType: "internal"
+      publishVstsFeed: "f7087ef5-bf6f-48b2-8b8b-5e513f4a7a9e"
+      allowPackageConflicts: true 
